@@ -17,7 +17,8 @@ export const Main = () => {
     return (
         <>
             <section className="flex flex-col items-center mt-10 min-h-screen">
-                <h1 className="text-2xl md:text-5xl font-bold">💧Water Price Calculator</h1>
+                <h1 className="text-2xl md:text-5xl font-bold mb-2">💧Water Price Calculator</h1>
+                <h1 className="text-lg md:text-2xl font-bold">โปรแกรมคำนวณค่าน้ำ</h1>
 
                 <div className="flex flex-col md:flex-row md:gap-4 max-w-screen-sm items-between justify-between">
                     <div className="mt-10 md:mt-10 flex flex-col items-start">
