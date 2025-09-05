@@ -22,12 +22,12 @@ export const Main = () => {
                 <div className="flex flex-col md:flex-row md:gap-4 max-w-screen-sm items-between justify-between">
                     <div className="mt-10 md:mt-10 flex flex-col items-start">
                         <label className="text-md">Enter price/a unit</label>
-                        <input type="text" value={unitPrice} onChange={(e) => setUnitPrice(parseFloat(e.target.value) || "")} className="pl-2 border border-gray-500 rounded" placeholder="0.00" />
+                        <input type="number" step={0.01} value={unitPrice} onChange={(e) => setUnitPrice(parseFloat(e.target.value) || "")} className="pl-2 border border-gray-500 rounded" placeholder="0.00" />
                     </div>
 
                     <div className="mt-2 md:mt-10 flex flex-col items-start">
                         <label className="text-md">Enter maintain fee</label>
-                        <input type="text" value={maintainFee} onChange={(e) => setMaintainFee(parseFloat(e.target.value) || "")} className="pl-2 border border-gray-500 rounded" placeholder="0.00" />
+                        <input type="number" step={0.01} value={maintainFee} onChange={(e) => setMaintainFee(parseFloat(e.target.value) || "")} className="pl-2 border border-gray-500 rounded" placeholder="0.00" />
                     </div>
                 </div>
 
