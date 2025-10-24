@@ -22,19 +22,19 @@ export const Main = () => {
 
                 <div className="flex flex-col md:flex-row md:gap-4 max-w-screen-sm items-between justify-between">
                     <div className="mt-10 md:mt-10 flex flex-col items-start">
-                        <label className="text-md">Enter price/a unit</label>
+                        <label className="text-md">ราคาต่อหน่วย/บาท</label>
                         <input type="number" step={0.01} value={unitPrice} onChange={(e) => setUnitPrice(parseFloat(e.target.value) || "")} className="pl-2 border border-gray-500 rounded" placeholder="0.00" />
                     </div>
 
                     <div className="mt-2 md:mt-10 flex flex-col items-start">
-                        <label className="text-md">Enter maintain fee</label>
+                        <label className="text-md">ค่าบำรุงรักษา</label>
                         <input type="number" step={0.01} value={maintainFee} onChange={(e) => setMaintainFee(parseFloat(e.target.value) || "")} className="pl-2 border border-gray-500 rounded" placeholder="0.00" />
                     </div>
                 </div>
 
                 <div className="flex flex-col gap-2 md:flex-row md:gap-4 max-w-screen-sm items-between justify-between bg-gray-300 rounded-lg p-5 mt-4 md:mt-20">
                     <div className="flex flex-col items-start text-xl font-bold">
-                        <label>🗓️ Previously mounth</label>
+                        <label>🗓️ จำนวนหน่วยก่อนใช้</label>
                         <input type="text" value={previousMonth} onChange={(e) => setPreviousMonth(parseFloat(e.target.value) || "")} className="pl-2 border border-gray-500 rounded" placeholder="0" />
                     </div>
 
@@ -44,7 +44,7 @@ export const Main = () => {
                     </div>
 
                     <div className="flex flex-col items-start text-xl font-bold">
-                        <label>📌 Current mounth</label>
+                        <label>📌 จำนวนหน่วยหลังใช้</label>
                         <input type="text" value={currentMonth} onChange={(e) => setCurrentMonth(parseFloat(e.target.value) || "")} className="pl-2 border border-gray-500 rounded" placeholder="0" />
                     </div>
                 </div>
@@ -54,7 +54,7 @@ export const Main = () => {
                 </div>
 
                 <div className="mt-10 text-4xl font-bold">
-                    <p>Result: {result}</p>
+                    <p>ผลลัพธ์: {result}</p>
                 </div>
 
             </section>
