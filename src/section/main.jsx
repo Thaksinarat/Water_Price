@@ -50,7 +50,7 @@ export const Main = () => {
                 </div>
 
                 <div className="mt-5">
-                    <button onClick={handleCalculate} className="text-lg font-medium text-white bg-blue-600 rounded-xl p-4 cursor-pointer hover:bg-blue-700 transition hover:-translate-y-1 hover:shadow-lg">Calculate✨</button>
+                    <button onClick={handleCalculate} className="text-lg font-medium text-white bg-blue-600 rounded-xl p-4 cursor-pointer hover:bg-blue-700 transition hover:-translate-y-1 hover:shadow-lg">คำนวณ✨</button>
                 </div>
 
                 <div className="mt-10 text-4xl font-bold">
